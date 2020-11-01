@@ -71,7 +71,7 @@
   __attribute__((__no_address_safety_analysis__, __noinline__))
 #endif
 #endif
-#ifndef FOLLY_DISABLE_ADDRESS_SANITIZER
+
 #ifndef FOLLY_SANITIZE_THREAD
 #if FOLLY_HAS_FEATURE(thread_sanitizer) || __SANITIZE_THREAD__
 #define FOLLY_SANITIZE_THREAD 1
